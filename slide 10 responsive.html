@@ -11,11 +11,11 @@
             border-radius: 10px ;
             padding: 10px;
             width: 100%;
-            .menu1{
+        }
+        .menu1{
                 display: flex;
                 margin: auto;
             }
-        }
         .menu2{
             border: 3px solid ;
             border-radius: 10px;
@@ -24,34 +24,38 @@
             margin-right: 100px;
             }
 
-        .nd{
-            display: flex;
+        .info{
+            display: block;
+            float: left;
+            border: 3px solid ;
+            border-radius: 10px;
+            
         }
 
         .info{width: 100%;}
         @media (max-width:576px) {
             .infor{width: 100%;}
         }
-        .myclass{width: 100%;}
+       
         @media (min-width:577px), (max-width:768px){
-            .myclass{width: 49%;}
+            .info{width: 49%;}
         }
-        .myprf{width: 100%;}
+       
         @media (min-width:769px) {
-            .myprf{width: 33%;}
+            .info{width: 33%;}
         }
     </style>
 </head>
 <body>
     <header class="menu">
-        <a href="https://vnua.edu.vn/"> <img src="tải xuống.jpg" width="100"> </a>
+        <a href="https://vnua.edu.vn/"> <img src="download.jpg" width="100"> </a>
         <div class="menu1">
         <a href="#info"> <p class="menu2">My info</p> </a>
         <a href="#myclass"> <p class="menu2">My class</p> </a>
         <a href="#myprf"> <p class="menu2">My Profile</p> </a>
         </div>
     </header>
-    <div class="nd">
+    <div class="info">
     <div id="info" class="info">
         <ul>
             My info
@@ -61,7 +65,7 @@
         </ul>
     </div>
     
-    <div id="myclass" class="myclass">
+    <div id="myclass" class="info">
         <ul>
             My class
             <li>Trường: Học viện Nông Nghiệp Việt Nam</li>
@@ -72,7 +76,7 @@
         </ul>
     </div>
      
-    <div id="myprf" class="myprf">
+    <div id="myprf" class="info">
         <ul>
             My profile
             <li>Sở thích: ăn, ngủ, nghỉ, chơi</li>
