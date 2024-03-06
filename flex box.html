@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 20rem;
+            height: 20rem;
+        }
+
+        .anh{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width:576px) {
+        .anh img {
+            width: 50%; /* Two images per row on screens larger than 576px */
+        }
+        }
+
+        @media (min-width:768px) {
+            .anh img {
+                width: 33.33%; /* Three images per row on screens larger than 768px */
+            }
+        }
+
+        @media (min-width:992px) {
+            .anh img {
+                width: 25%; /* Four images per row on screens larger than 992px */
+            }
+        }
+
+        @media (min-width:1200px) {
+            .anh img {
+                width: 16%; /* Five images per row on screens larger than 1200px */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anh">
+        <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc060-15_56_09_600.JPG">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc023-15_41_01_710.jpg" >
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc014-15_38_05_148.jpg">
+            <img src="https://file.vnua.edu.vn/data/0/images/2022/10/13/host/nhvl1-9.jpg" >
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc010-15_34_44_251.jpg">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc004-15_34_45_265.jpg">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2016/IMG_1059-17_05_04_824.jpg"> 
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/s3-14_05_48_325.jpg">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2019/hinh_anh_dep_hv036-16_09_13_056.jpg">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc005-15_34_45_109.jpg">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc018-15_38_04_462.jpg">
+            <img src="https://file.vnua.edu.vn/DATA/0/IMAGES/2018/anh_csvc030-15_41_00_555.JPG" >
+    </div>
+</body>
+</html>
