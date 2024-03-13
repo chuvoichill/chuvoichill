@@ -1,0 +1,92 @@
+.dau{
+    height: 40px;
+    background-color: #E9EFFF;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    height: 80px;
+    background-image: linear-gradient(0,#1F472A,#1F472A);
+    justify-content: space-between;
+    
+}
+.header-with-srearch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header__search {
+    display: inline-flex;
+    margin: 20px 20px 0px 20px;
+}
+.header__logo_search-button {
+    background: none;
+    border: none;
+    outline: none;
+    
+}
+.timkiem{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.search1{
+    width: 35vw;
+    background-color: rgba(255, 255, 255,0.8);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    padding: 20px 20px 20px 13px;
+    
+}
+.trangchu{
+    height: 32px;
+    font-size: 12px;
+    padding: 10px 10px 10px 0px;
+    border-bottom: 1px solid #1F472A;
+}
+.trangchu ul {
+    display: flex;
+    
+}
+.trangchu ul li{
+    display: flex;
+    margin-right: 5px;
+}
+.trangchu ul li b{
+    color: slategrey;
+}
+.trangchu ul li a {
+    color: slategrey;
+}
+.trangchu ul li a i{
+    color: #1F472A;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+#demo,.truot{
+    width: 100%;
+    height: 150px;
+}
+.danhmuc,.next{
+    background-image: linear-gradient(0,#1F472A,#1F472A);
+}
+.card-text b{
+    color: red;
+}
+.card{
+    width: 13rem;
+    margin: 5px;
+}
+.container{
+    justify-content: center;
+}
+
+
