@@ -111,5 +111,50 @@ public class HocSinh extends Nguoi {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+package bai3;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import org.omg.CosNaming.NamingContextExtPackage.AddressHelper;
+
+public class QLHS {
+	private ArrayList<HocSinh> dshs;
 	
+	public QLHS() {
+		dshs=new ArrayList<HocSinh>(100);
+	}
+	
+	public void themHocSinh(HocSinh hs) {
+		dshs.add(hs);
+	}
+	
+	public void nhapDanhSachHS(Scanner sc) {
+		HocSinh hs;
+		System.out.println("Nhap vao so luong hoc sinh can nhap them: ");
+		int n=sc.nextInt();
+		System.out.println("Nhap thong tin cho hoc sinh trong danh sach");
+		for(int i=0;i<n;i++) {
+			System.out.println("Nhap thong tin hoc sinh "+(i+1));
+			HocSinh hs=new HocSinh();
+			hs.nhapThongTin(sc);
+			themHocSinh(hs);
+		}
+	}
+	public void inDanhSach() {
+		int n=dshs.size();
+		for(int i=0;i<n;i++) {
+			System.out.println("Hoc sinh "+(i+1));
+		}
+	}
+}
 	
