@@ -52,13 +52,15 @@ public class Nguoi {
 		System.out.println("Que Quan: "+queQuan);
 	}
 	public static void main(String[] args) {
-		Nguoi ng=new Nguoi();
+		HocSinh hs=new HocSinh();
 		Scanner sc = new Scanner(System.in);
-		ng.nhapThongTin(sc);
-		ng.inThongTin();
+		hs.nhapThongTin(sc);
+		hs.inThongTin();
+		
 		
 	}
 }
+
 
 
 
@@ -81,31 +83,33 @@ public class HocSinh extends Nguoi {
 	}
 	
 	public HocSinh(String hoTen, Date ngaySinh, String lop, String khoaHoc){
-			super(hoTen, ngaySinh);
-			this.lop=lop;
-			this.khoaHoc=khoaHoc;
-		}
+		super(hoTen, ngaySinh);
+		this.lop=lop;
+		this.khoaHoc=khoaHoc;
+	}
 
-		public HocSinh(String hoTen, String lop, String khoaHoc){
-			this(hoTen,lop,khoaHoc);
-		}
-		public void nhapThongTin(Scanner sc){
-			super.nhapThongTin(sc);
-			System.out.println("Nhap lop: ");
-			lop=sc.nextLine();
-			System.out.println("Nhap khoa hoc: ");
-			khoaHoc=sc.nextLine();
-			System.out.println("Nhap ky hoc: ");
-			kyHoc=sc.nextInt();
-		}
-		public void inThongTin(){
-		super.inThongTin();
-		...<?>...
-		}
-		public <?> getLop(){
-		return <?>;
-		}
+	public HocSinh(String hoTen, String lop, String khoaHoc){
+		
+		
+	}
+	public void nhapThongTin(Scanner sc){
+		super.nhapThongTin(sc);
+		System.out.println("Nhap lop: ");
+		lop=sc.nextLine();
+		System.out.println("Nhap khoa hoc: ");
+		khoaHoc=sc.nextLine();
+		System.out.println("Nhap ky hoc: ");
+		kyHoc=sc.nextInt();
+	}
+	public void inThongTin(){
+	super.inThongTin();
+	System.out.println("Lop: "+lop);
+	System.out.println("Khoa hoc: "+khoaHoc);
+	System.out.println("Ky hoc: "+kyHoc);
+	
+		
 	}
 	
-	
 }
+	
+	
